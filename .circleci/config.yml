@@ -13,6 +13,3 @@ jobs:
           output: json
           repo-id: bridgecrewio/terragpat
           soft-fail: true
-orbs:
-  checkov: bridgecrew/checkov-orb@0.0.3
-version: 2.1
