@@ -7,5 +7,5 @@ workflows:
     example-workflow:
       jobs:
         - bridgecrew/bridgecrew_scan:
-            api-key-variable: '8c3985ac-a56a-4743-aac0-53cd2b015e43' 
+            api-key-variable: 'BC' 
             directory: .
