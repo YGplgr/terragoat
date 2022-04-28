@@ -1,15 +1,11 @@
 version: 2.1
 
 orbs: 
-  checkov: bridgecrew/checkov@0.0.4
+  bridgecrew: bridgecrew/bridgecrew@1.0.5
 
-jobs:
-  build:
-    machine: true
-    steps:
-      - checkov/scan:
-          api-key: 8c3985ac-a56a-4743-aac0-53cd2b015e43
-          directory: ~/terragoat
-          output: json
-          repo-id: YGplgr/terragoat
-          soft-fail: true
+workflows:
+    example-workflow:
+      jobs:
+        - bridgecrew/bridgecrew_scan:
+            api-key-variable: '8c3985ac-a56a-4743-aac0-53cd2b015e43' 
+            directory: .
