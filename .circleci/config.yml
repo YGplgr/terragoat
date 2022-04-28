@@ -9,7 +9,7 @@ jobs:
     steps:
       - checkov/scan:
           api-key: 8c3985ac-a56a-4743-aac0-53cd2b015e43
-          directory: .
+          #directory: .
           output: json
           repo-id: bridgecrewio/terragpat
           soft-fail: true
